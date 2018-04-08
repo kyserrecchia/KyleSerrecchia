@@ -1,0 +1,144 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/*main sections*/
+.home {
+	height: 100vh;
+	background-image: url("images/metro.jpg");
+}
+
+    .home h1 {
+    	font-family: 'IBM Plex Sans', sans-serif;
+    	font-size: 3.5em;
+    	font-weight: 700;
+      opacity: .75;
+    	position: relative;
+      top: 51%;
+      left: 44%;
+      transform: translate(-50%, -50%);
+    	text-align: center;
+    }
+
+    .home h2 {
+    	font-family: 'Raleway', sans-serif;
+    	opacity: .7;
+      font-weight: 600;
+    	position: relative;
+      top: 54%;
+      left: 51%;
+      transform: translate(-50%, -50%);
+    	text-align: center;
+    }
+    
+    /*down icon*/
+    .home p {
+      font-family: 'Ubuntu', sans-serif;
+      opacity: .7;
+      color: white;
+      font-weight: 600;
+      position: relative;
+      font-size: 3em;
+      top: 80%;
+      left: 50%;
+      cursor: pointer;
+      transform: translate(-50%, -50%) scale(2, 1);;
+      text-align: center;
+    }
+
+.about {
+  margin: auto;
+  padding: 0;
+	height: 100vh;
+	background-color: white;
+}
+
+    .about .diamonds {
+      border-radius: 7px;
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      position: relative;
+      width: 10.8%;
+      height: 22.5%;
+      transform: rotate(45deg);
+      background-color: white;
+      z-index: 1;
+    }
+
+
+.skills {
+	height: 100vh;
+	background-color: yellow;
+}
+
+.projects {
+	height: 100vh;
+	background-color: green;
+}
+
+.contact {
+	height: 100vh;
+	background-color: blue;
+}
+
+
+/*navigation*/
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.hamburgerIcon {
+  margin: 15px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  font-size:30px;
+  cursor:pointer;
+}
+
+.hamburgerIcon:hover {
+  transition: 'opacity 5s';
+  opacity: .6;
+}
+
