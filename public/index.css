@@ -12,9 +12,10 @@
 
     .home h1 {
     	font-family: 'IBM Plex Sans', sans-serif;
+      font-family: 'Vollkorn', sans-serif;
     	font-size: 3.5em;
     	font-weight: 700;
-      opacity: .75;
+      opacity: .80;
     	position: relative;
       top: 51%;
       left: 44%;
@@ -24,6 +25,7 @@
 
     .home h2 {
     	font-family: 'Raleway', sans-serif;
+      font-family: 'Vollkorn', sans-serif;
     	opacity: .7;
       font-weight: 600;
     	position: relative;
@@ -33,7 +35,7 @@
     	text-align: center;
     }
     
-    /*down icon*/
+    /*V down icon*/
     .home p {
       font-family: 'Ubuntu', sans-serif;
       cursor: pointer;
@@ -42,31 +44,170 @@
       font-weight: 600;
       position: relative;
       font-size: 1.8em;
-      top: 81%;
+      top: 78%;
       left: 50%;
       transform: translate(-50%, -50%) scale(2, 1);
       text-align: center;
+      -webkit-animation-name: downV; /* Safari 4.0 - 8.0 */
+      -webkit-animation-duration: 6s; /* Safari 4.0 - 8.0 */
+      -webkit-animation-iteration-count: 5;
+      animation-name: downV;
+      animation-duration: 6s;
+      animation-iteration-count: 5;
     }
 
-.about {
-  margin: auto;
+        /* Safari 4.0 - 8.0 */
+        @-webkit-keyframes downV {
+            0%  {top: 78%;}
+            17% {top: 78%;}           
+            24% {top: 78.7%;}           
+            29.5% {top: 78%;}
+            29.6% {top: 78%;}           
+            34.5% {top: 78.7%;}           
+            40% {top: 78%;}           
+            100% {top: 78%;}
+        }
+
+        /* Standard syntax */
+        @keyframes downV {  
+            0%  {top: 78%;}
+            17% {top: 78%;}           
+            24% {top: 78.7%;}           
+            29.5% {top: 78%;}
+            29.6% {top: 78%;}            
+            34.5% {top: 78.7%;}
+            40% {top: 78%;}            
+            100% {top: 78%;}
+        }
+
+.diamondRow {
+  margin: 0 0 0 2.2vw;
   padding: 0;
-	height: 100vh;
+	height: 0vh;
 	background-color: white;
 }
 
-    .about .diamonds {
+    .diamondRow .diamonds {
+      overflow: visible;
       border-radius: 5px;
       margin: 0;
       padding: 0;
       display: inline-block;
       position: relative;
       width: 10.8%;
-      height: 22.9%;
+      height: 130px;
       transform: rotate(45deg);
       background-color: white;
       z-index: 1;
     }
+
+    .diamondRow .specDiamond {
+      position: relative;
+      z-index: 3;
+    }
+
+.about {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-height: 70vh;
+}
+
+    .about .aboutMe {
+      position: relative;
+      z-index: 2;
+      display: inline-block;
+      width: 62%;
+      max-height: 70vh;
+      overflow: inherit;
+    }
+
+        .aboutMe h1 {
+          /*border: 2px solid red;*/
+          width: 400px;
+          font-family: 'Abril Fatface', cursive;
+          letter-spacing: .15em;
+          opacity: .87;
+          position: relative;
+          z-index: 2;
+          font-size: 3em;
+          text-shadow: 2px 1.4px #d3d3d3;
+          transform: translate(95%, 90%);
+        }
+
+        /*.aboutMe p {
+          border: 2px solid red;
+          font-family: 'Noto Sans', sans-serif;
+          font-weight: 600;
+          letter-spacing: .15em;
+          z-index: 2;
+          text-shadow: 2px 1.4px #d3d3d3;
+          transform: translate(10%,150%);
+          width: 85%;
+        }*/
+
+        .aboutMe p:nth-of-type(1) {
+          /*border: 2px solid red;*/
+          font-family: 'Noto Sans', sans-serif;
+          font-weight: 600;
+          letter-spacing: .15em;
+          z-index: 2;
+          text-shadow: 2px 1.4px #d3d3d3;
+          transform: translate(10%,150%);
+          width: 85%;
+        }
+
+        .aboutMe p:nth-of-type(2) {
+          /*border: 2px solid red;*/
+          font-family: 'Noto Sans', sans-serif;
+          font-weight: 600;
+          letter-spacing: .15em;
+          z-index: 2;
+          text-shadow: 2px 1.4px #d3d3d3;
+          transform: translate(10%,110%);
+          width: 85%;
+        }
+
+        .aboutMe p:nth-of-type(3) {
+          /*border: 2px solid red;*/
+          font-family: 'Noto Sans', sans-serif;
+          font-weight: 600;
+          letter-spacing: .15em;
+          z-index: 2;
+          text-shadow: 2px 1.4px #d3d3d3;
+          transform: translate(10%,440%);
+          width: 85%;
+        }
+
+        .aboutMe a {
+          cursor: pointer;
+          background-color: rgb(30,30,30, .35);
+          text-shadow: none;
+          padding: 0px 2px;
+          border-radius: 6px;
+          text-decoration: underline;
+          text-underline-position: under;
+        }
+
+    .about .aboutImg {  
+      position: relative;
+      z-index: 2;
+      display: inline-block;
+      width: 37%;
+      height: 70vh;
+      border-left: 2px solid black;
+    }
+
+        .aboutImg img {
+          position: relative;
+          z-index: 2;
+          border-radius: 5px;
+          border: 2px solid black;
+          width: 50%;
+          height: 50%;
+          box-shadow: 5px 5px rgb(50,50,50, .7);
+          transform: translate(45%,55%);
+        }
 
 .skills {
 	height: 100vh;
@@ -85,11 +226,9 @@
 
 
 /*navigation*/
-
 .hamburgerIcon {
   margin: 15px;
   padding: auto;
-  /*width: 1.2em;*/
   background-color: rgb(180,180,180, .3);
   transform: scale(1.5,1);
   overflow: hidden;
@@ -104,18 +243,6 @@
       transition: 'opacity 5s';
       opacity: .6;
     }
-
-    /*.hamburgerIcon::after {
-      content: "";
-      background-color: #d3d3d3;
-      opacity: 0.5;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      position: absolute;
-      z-index: -1;   
-    }*/
 
 .sidenav {
     height: 100%;

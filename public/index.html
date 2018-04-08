@@ -3,10 +3,11 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Title</title>
+		<title>Kyle Serrecchia</title>
 		<link rel="stylesheet" href="index.css">
-		<link href="https://fonts.googleapis.com/css?family=Anton|IBM+Plex+Sans|Noto+Sans|Raleway|Ubuntu" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Anton|IBM+Plex+Sans|Noto+Sans|Raleway|Ubuntu|Abril+Fatface|Vollkorn" rel="stylesheet">
 	</head>
+
 	<body>
 		<div class="home">
 			<div id="mySidenav" class="sidenav">
@@ -20,29 +21,41 @@
 			<span class="hamburgerIcon" onclick="openNav()">&#9776;</span>
 			<h1>Kyle Serrecchia</h1>
 			<h2>Web Developer</h2>
-			<p>V</p>
+			<p id="downV" onclick="scrollFunc.about()">V</p>
 			<!-- <p id="picAttribution">Thanks to Charles Forerunner of Unsplash for photo!</p> -->
 		</div>
+
+		<div class="diamondRow">
+			<div class="diamonds"></div>
+			<div class="diamonds"></div>
+			<div class="diamonds"></div>
+			<div class="diamonds"></div>
+			<div class="diamonds"></div>
+			<div class="diamonds specDiamond"></div>
+			<div class="diamonds"></div>
+			<div class="diamonds"></div>
+			<div class="diamonds"></div>
+		</div>
+
 		<div class="about">
-			<div class="diamonds"></div>
-			<div class="diamonds"></div>
-			<div class="diamonds"></div>
-			<div class="diamonds"></div>
-			<div class="diamonds"></div>
-			<div class="diamonds"></div>
-			<div class="diamonds"></div>
-			<div class="diamonds"></div>
-			<div class="diamonds"></div>
+			<div class="aboutMe">
+					<h1>About</h1>
+					<p>Welcome, I'm Kyle! I'm a philosopher and math/science enthusiast turned developer.  And software is my passion! I love breaking down complex problems and building up clean, effective solutions.</p>
+					<p>I also have a constant craving to learn more because, like Socrates, the more I learn, the less I feel I know!  Having completed a bachelor's in philosophy a little over a year ago and a full-stack web development bootcamp through UCLA a few months ago, I've decided to further my education by working toward an M.S. in Software Engineering at CSUN while seeking employment as a web developer.</p>
+					<p>If you would like to get to know more about me personally or inquire about, well, anything at all, I invite you to reach out to me any time! <a onclick="scrollFunc.contact()">CONTACT ME</a></p>
+			</div>
+			<div class="aboutImg">
+				<img src="images/bigFace2.jpg" alt="profile-pic">	
+			</div>
 		</div>
-		<div class="skills">
-			
+
+		<div class="skills">	
 		</div>
-		<div class="projects">
-			
+		<div class="projects">	
 		</div>
-		<div class="contact">
-			
+		<div class="contact">	
 		</div>
+
 	<script src="index.js"></script>
 	</body>
 </html>
