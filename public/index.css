@@ -36,15 +36,15 @@
     /*down icon*/
     .home p {
       font-family: 'Ubuntu', sans-serif;
+      cursor: pointer;
       opacity: .7;
       color: white;
       font-weight: 600;
       position: relative;
-      font-size: 3em;
-      top: 80%;
+      font-size: 1.8em;
+      top: 81%;
       left: 50%;
-      cursor: pointer;
-      transform: translate(-50%, -50%) scale(2, 1);;
+      transform: translate(-50%, -50%) scale(2, 1);
       text-align: center;
     }
 
@@ -56,18 +56,17 @@
 }
 
     .about .diamonds {
-      border-radius: 7px;
+      border-radius: 5px;
       margin: 0;
       padding: 0;
       display: inline-block;
       position: relative;
       width: 10.8%;
-      height: 22.5%;
+      height: 22.9%;
       transform: rotate(45deg);
       background-color: white;
       z-index: 1;
     }
-
 
 .skills {
 	height: 100vh;
@@ -86,11 +85,43 @@
 
 
 /*navigation*/
+
+.hamburgerIcon {
+  margin: 15px;
+  padding: auto;
+  /*width: 1.2em;*/
+  background-color: rgb(180,180,180, .3);
+  transform: scale(1.5,1);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  font-size:30px;
+  cursor:pointer;
+  z-index: 2;
+}
+
+    .hamburgerIcon:hover {
+      transition: 'opacity 5s';
+      opacity: .6;
+    }
+
+    /*.hamburgerIcon::after {
+      content: "";
+      background-color: #d3d3d3;
+      opacity: 0.5;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: -1;   
+    }*/
+
 .sidenav {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     top: 0;
     left: 0;
     background-color: #111;
@@ -99,46 +130,33 @@
     padding-top: 60px;
 }
 
-.sidenav a {
-    padding-top: 8px;
-    padding-bottom: 8px;
-    text-decoration: none;
-    text-align: center;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    cursor: pointer;
-    transition: 0.3s;
-}
+    .sidenav a {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        text-decoration: none;
+        text-align: center;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        cursor: pointer;
+        transition: 0.3s;
+    }
 
-.sidenav a:hover {
-    color: #f1f1f1;
-}
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
 
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
 
-.hamburgerIcon {
-  margin: 15px;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  font-size:30px;
-  cursor:pointer;
-}
-
-.hamburgerIcon:hover {
-  transition: 'opacity 5s';
-  opacity: .6;
-}
 
