@@ -106,6 +106,12 @@
       z-index: 3;
     }
 
+.diamondRow2 {
+  position: relative;
+  left: 55px;
+  bottom: 145px;
+}
+
 .about {
   position: relative;
   z-index: 2;
@@ -174,7 +180,7 @@
       display: inline-block;
       width: 37%;
       height: 70vh;
-      border-left: 2px solid black;
+      /*border-left: 2px solid black;*/
     }
 
         .aboutImg img {
@@ -190,8 +196,16 @@
 
 .skills {
 	height: 100vh;
-	background-color: yellow;
+	background: url('../images/blank-page.jpg');
+  background-size: 100vw 100vh;
 }
+
+    .skills h1 {
+      font-family: 'Finger Paint', cursive;
+      position: relative;
+      font-size: 4em;
+      transform: translate(67%,80%);
+    }
 
 .projects {
 	height: 100vh;

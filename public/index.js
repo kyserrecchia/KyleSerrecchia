@@ -4,7 +4,7 @@ const sideNav = document.getElementById('mySidenav');
 offNavListener();
 function offNavListener(){
 	sideNav.addEventListener('mouseleave', function(){
-		setTimeout(function(){closeNav()}, 1100);
+		setTimeout(function(){closeNav()}, 300);
 	});
 }
 
