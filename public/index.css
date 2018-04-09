@@ -4,8 +4,14 @@
 	padding: 0;
 }
 
+body {
+  overflow-x: hidden;
+  /*overflow-y: auto;*/
+}
+
 /*main sections*/
 .home {
+  /*overflow-x: hidden;*/
 	height: 100vh;
 	background-image: url("images/metro.jpg");
 }
@@ -84,6 +90,9 @@
   margin: 0 0 0 2.2vw;
   padding: 0;
 	height: 0vh;
+  position: relative;
+  left: 55px;
+  bottom: 145px;
 	background-color: white;
 }
 
@@ -100,17 +109,6 @@
       background-color: white;
       z-index: 1;
     }
-
-    .diamondRow .specDiamond {
-      position: relative;
-      z-index: 3;
-    }
-
-.diamondRow2 {
-  position: relative;
-  left: 55px;
-  bottom: 145px;
-}
 
 .about {
   position: relative;
@@ -195,6 +193,7 @@
         }
 
 .skills {
+  /*overflow-x: hidden;*/
 	height: 100vh;
 	background: url('../images/blank-page.jpg');
   background-size: 100vw 100vh;
@@ -208,11 +207,13 @@
     }
 
 .projects {
+  /*overflow-x: hidden;*/
 	height: 100vh;
 	background-color: green;
 }
 
 .contact {
+  /*overflow-x: hidden;*/
 	height: 100vh;
 	background-color: blue;
 }
@@ -241,7 +242,7 @@
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 3;
+    z-index: 4;
     top: 0;
     left: 0;
     background-color: #111;
