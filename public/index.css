@@ -86,30 +86,6 @@ body {
             100% {top: 78%;}
         }
 
-.diamondRow {
-  margin: 0 0 0 2.2vw;
-  padding: 0;
-	height: 0vh;
-  position: relative;
-  left: 55px;
-  bottom: 145px;
-	background-color: white;
-}
-
-    .diamondRow .diamonds {
-      overflow: visible;
-      border-radius: 5px;
-      margin: 0;
-      padding: 0;
-      display: inline-block;
-      position: relative;
-      width: 10.8%;
-      height: 130px;
-      transform: rotate(45deg);
-      background-color: white;
-      z-index: 1;
-    }
-
 .about {
   position: relative;
   z-index: 2;
@@ -178,7 +154,6 @@ body {
       display: inline-block;
       width: 37%;
       height: 70vh;
-      /*border-left: 2px solid black;*/
     }
 
         .aboutImg img {
@@ -193,27 +168,17 @@ body {
         }
 
 .skills {
-  /*overflow-x: hidden;*/
 	height: 100vh;
-	background: url('../images/blank-page.jpg');
-  background-size: 100vw 100vh;
+	background: url('../images/skills-background.png');
+  background-size: 100vw 101vh;
 }
 
-    .skills h1 {
-      font-family: 'Finger Paint', cursive;
-      position: relative;
-      font-size: 4em;
-      transform: translate(67%,80%);
-    }
-
 .projects {
-  /*overflow-x: hidden;*/
 	height: 100vh;
 	background-color: green;
 }
 
 .contact {
-  /*overflow-x: hidden;*/
 	height: 100vh;
 	background-color: blue;
 }
