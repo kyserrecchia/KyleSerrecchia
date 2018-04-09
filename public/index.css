@@ -229,7 +229,7 @@
   top: 0;
   font-size:30px;
   cursor:pointer;
-  z-index: 2;
+  z-index: 3;
 }
 
     .hamburgerIcon:hover {
