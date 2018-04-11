@@ -127,11 +127,11 @@ body {
         }
 
         .aboutMe p:nth-of-type(2) {
-          transform: translate(10%,110%);
+          transform: translate(10%,130%);
         }
 
         .aboutMe p:nth-of-type(3) {
-          transform: translate(10%,440%);
+          transform: translate(10%,430%);
         }
 
         .aboutMe a {
@@ -187,6 +187,8 @@ body {
     }
 
     .projectGrid {
+      font-family: Varela Round, sans-serif;
+      color: white;
       width: 70%;
       height: 130vh; 
       position: relative;
@@ -207,11 +209,10 @@ body {
       grid-template-columns: 1fr 1fr;
     }
 
-        .p1name {
+
+        /*this is similar to p1name to p4name*/
+        .pname {
           position: relative;
-          grid-area: p1name;
-          font-family: Varela Round, sans-serif;
-          color: white;
           font-weight: 600;
           text-align: center;
           padding: 2px;
@@ -220,100 +221,84 @@ body {
           text-underline-position: under;
         }
 
-        .p2name {
-          position: relative;
-          grid-area: p2name;
-          font-family: Varela Round, sans-serif;
-          color: white;
-          font-weight: 600;
-          text-align: center;
-          padding: 2px;
-          font-size: 2em;
-          text-decoration: underline;
-          text-underline-position: under;
-        }
+            /*what is special to p1name to p4name*/
+            .p1name {
+              grid-area: p1name;
+            }
 
-        .p3name {
-          position: relative;
-          grid-area: p3name;
-          font-family: Varela Round, sans-serif;
-          color: white;
-          font-weight: 600;
-          text-align: center;
-          padding: 2px;
-          font-size: 2em;
-          text-decoration: underline;
-          text-underline-position: under;
-        }
+            .p2name {
+              grid-area: p2name;
+            }
 
-        .p4name {
-          position: relative;
-          grid-area: p4name;
-          font-family: Varela Round, sans-serif;
-          color: white;
-          font-weight: 600;
-          text-align: center;
-          padding: 2px;
-          font-size: 2em;
-          text-decoration: underline;
-          text-underline-position: under;
-        }
+            .p3name {
+              grid-area: p3name;
+            }
 
-        .p1 {
+            .p4name {
+              grid-area: p4name;
+            }
+
+        /*this is similar to p1 to p4*/
+        .p {
           border-radius: 5px;
           position: relative;
-          grid-area: p1;
-          background-image: url("../images/ajonesHome.png");
           background-repeat: no-repeat;
           background-size: cover;
         }
 
-        .p2 {
-          border-radius: 5px;
-          position: relative;
-          grid-area: p2;
-          background-image: url("../images/iaHome.png");
-          background-repeat: no-repeat;
-          background-size: cover;
+            /*what is special to p1 to p4*/
+
+            .p1 {
+              grid-area: p1;
+              background-image: url("../images/ajonesHome.png");
+            }
+
+            .p2 {
+              grid-area: p2;
+              background-image: url("../images/iaHome.png");
+            }
+
+            .p3 {
+              grid-area: p3;
+              background-image: url("../images/funcGameHome.png");
+            }
+
+            .p4 {
+              grid-area: p4;
+              background-image: url("../images/portHome.png");
+            }
+
+        /*this is similar to all descriptions*/
+        .pdesc {
+            border-radius: 10px;
+            background-color: rgb(0,0,0, .4);
+            padding: 10px 10px;
+            width: 80%;
+            margin: auto;
+            margin-top: 5%;
+            text-indent: 10%;
         }
 
-        .p3 {
-          border-radius: 5px;
-          position: relative;
-          grid-area: p3;
-          background-image: url("../images/funcGameHome.png");
-          background-repeat: no-repeat;
-          background-size: cover;
-        }
+            /*this is special to each description*/
+            .p1desc {
+              position: relative;
+              grid-area: p1desc;
+            }
 
-        .p4 {
-          border-radius: 5px;
-          position: relative;
-          grid-area: p4;
-          background-image: url("../images/portHome.png");
-          background-repeat: no-repeat;
-          background-size: cover;
-        }
+            .p2desc {
+              position: relative;
+              grid-area: p2desc;
+            }
 
-        .p1desc {
-          position: relative;
-          grid-area: p1desc;
-        }
+            .p3desc {
+              position: relative;
+              grid-area: p3desc;
+            }
 
-        .p2desc {
-          position: relative;
-          grid-area: p2desc;
-        }
-
-        .p3desc {
-          position: relative;
-          grid-area: p3desc;
-        }
-
-        .p4desc {
-          position: relative;
-          grid-area: p4desc;
-        }
+            .p4desc {
+              position: relative;
+              grid-area: p4desc;
+            }
 
  
 
