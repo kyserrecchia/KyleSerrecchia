@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Kyle Serrecchia</title>
 		<link rel="stylesheet" href="index.css">
-		<link href="https://fonts.googleapis.com/css?family=Anton|IBM+Plex+Sans|Varela+Round|Noto+Sans|Raleway|Ubuntu|Finger+Paint|Abril+Fatface|Vollkorn" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Anton|IBM+Plex+Sans|PT+Sans|Varela+Round|Noto+Sans|Raleway|Ubuntu|Finger+Paint|Abril+Fatface|Vollkorn" rel="stylesheet">
 	</head>
 	<body>
 		<div class="home">
@@ -22,13 +22,14 @@
 			<h2>Web Developer</h2>
 			<p id="downV" onclick="scrollFunc.about()">V</p>
 			<!-- <p id="picAttribution">Thanks to Charles Forerunner of Unsplash for photo!</p> -->
+			<!-- <p>Thanks to Time Arterbury</p> -->
 		</div>
 		<div class="about">
 			<div class="aboutMe">
 					<h1>About Me</h1>
 					<p>Hi there, I'm Kyle! I'm a philosopher and math/science enthusiast turned web developer.  And software is my passion! I love utilizing sound principles to break down complex problems and build up clean, effective solutions.</p>
 					<p>I also have a constant craving to learn more because, like Socrates, the more I learn, the less I feel I know!  Having completed a bachelor's in philosophy a little over a year ago and a full-stack web development bootcamp through UCLA a few months ago, I've begun working toward an M.S. in Software Engineering at CSUN while seeking employment as a web developer.</p>
-					<p>If you would like to message me to inquire about, well, anything at all, I invite you to reach out to me any time! <a onclick="scrollFunc.contact()">CONTACT ME</a></p>
+					<p>If you would like to message me to inquire about, well, anything at all, I invite you to reach out to me any time! <a onclick="scrollFunc.contact()">REACH OUT</a></p>
 			</div>
 			<div class="aboutImg">
 				<img src="../images/profile-pic.jpg" alt="profile-pic">	
@@ -56,7 +57,7 @@
 				</div>
 				<div class='p2desc'>
 					<p class="pdesc">
-						A web App for readers of technical documents that are bombarded with initialisms and acronyms and need some help remembering them! They enter some text, choose their subject, and submit; then it is rendered below with the meanings of those tricky abbreviations available upon hover.  And all done with vanilla js!  
+						A web app for readers of technical documents that are bombarded with initialisms and acronyms and need some help remembering them! They enter some text, choose their subject, and submit; then it is rendered below with the meanings of those tricky abbreviations available upon hover.  And all done with vanilla js!  
 						<br><br>
 						Check it out on github here: <a target="_blank" href="https://github.com/kyserrecchia/IA-InitialismsAndAcronyms">https://github.com/kyserrecchia/IA-InitialismsAndAcronyms</a>
 					</p>
@@ -77,7 +78,19 @@
 				</div>
 			</div>
 		</div> 
-		<div class="contact"></div>
+		<div class="contact">
+			<div class="contactBox">
+				<h2>Contact Me</h2>
+				<div class="contactDirect">
+					<!-- html oddly formatted here for whitespace considerations with inline block elements - DON'T CHANGE! -->
+					<p><img src="../images/messageIcon.png" alt="email icon"><a href="mailto:kyserrecchia@gmail.com">kyserrecchia@gmail.com</a></p
+					><p><img src="../images/phoneIcon.png" alt="phone icon"><a href="tel:16616783532">661-678-3532</a></p>
+				</div>
+				<div class="contactContent">
+					<a href="https://github.com/kyserrecchia" target="_blank"><img src="../images/githubIcon.png" alt=""></a><a href="https://www.linkedin.com/in/kyle-serrecchia/" target="_blank"><img src="../images/linkedinIcon.png" alt=""></a>
+				</div>
+			</div>
+		</div>
 	<script src="index.js"></script>
 	</body>
 </html>
