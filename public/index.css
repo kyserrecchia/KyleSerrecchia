@@ -8,6 +8,10 @@ body {
   overflow-x: hidden;
 }
 
+.page {
+  transition: opacity .25s ease-in-out;
+}
+
 
 /*NAVIGATION*/
 .hamburgerIcon {

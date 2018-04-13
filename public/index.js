@@ -1,7 +1,10 @@
 
 //NAVIGATION//////////////////////////////////////////////////////////////////////////////////////
 const sideNav = document.getElementById('mySidenav');
+const pages = document.getElementsByClassName('page');
+
 offNavListener();
+
 function offNavListener(){
 	sideNav.addEventListener('mouseleave', function(){
 		setTimeout(function(){closeNav()}, 700);
@@ -10,9 +13,15 @@ function offNavListener(){
 
 function openNav(){
     sideNav.style.width = "250px";
+    for(var i = 0; i < pages.length; i++){
+        pages[i].style.opacity = .85;
+    }
 }
 function closeNav(){
 	sideNav.style.width = 0;
+    for(var i = 0; i < pages.length; i++){
+        pages[i].style.opacity = 1;
+    }
 }
 
 const scrollFunc = {
