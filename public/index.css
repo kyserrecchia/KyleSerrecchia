@@ -308,7 +308,7 @@ body {
 
         /*this is similar to p1 to p4*/
         .p {
-          border-radius: 5px;
+          cursor: pointer;
           position: relative;
           background-repeat: no-repeat;
           background-size: cover;
@@ -344,8 +344,12 @@ body {
             width: 90%;
             margin: auto;
             margin-top: 5%;
-            text-indent: 10%;
         }
+
+          .centered {
+              text-align: center;
+              display: inline-block;
+          }
         
             /*this is special to each description*/
             .p1desc {
@@ -367,6 +371,8 @@ body {
               position: relative;
               grid-area: p4desc;
             }
+
+
 
  
 
