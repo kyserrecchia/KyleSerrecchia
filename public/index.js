@@ -26,8 +26,14 @@ function closeNav(){
 
 const scrollFunc = {
 	home: function(){document.querySelector('.home').scrollIntoView({behavior: 'smooth'})},
-	about: function(){document.querySelector('.about').scrollIntoView({behavior: 'smooth'});
-					  document.getElementById('downV').style.animationIterationCount = 0},
+	about: function(){
+			document.getElementById('downV').style.animationIterationCount = 0;
+				if(screen.width>600){
+					document.querySelector('.about').scrollIntoView({behavior: 'smooth'});
+				} else{
+					document.querySelector('.aboutMe').scrollIntoView({behavior: 'smooth'});
+				}
+			},
 	skills: function(){document.querySelector('.skills').scrollIntoView({behavior: 'smooth'})},
 	projects: function(){document.querySelector('.projects').scrollIntoView({behavior: 'smooth'})},
 	contact: function(){document.querySelector('.contact').scrollIntoView({behavior: 'smooth'})}

@@ -169,7 +169,7 @@ body {
     }
 
         .aboutMe h1 {
-          width: 400px;
+          width: 40%;
           font-family: 'Abril Fatface', cursive;
           font-family: 'Noto Sans', sans-serif;
           letter-spacing: .15em;
@@ -224,7 +224,7 @@ body {
           position: relative;
           z-index: 2;
           border-radius: 5px;
-          border: 2px solid black;
+          border: 2px ridge gray;
           width: 50%;
           height: 50%;
           box-shadow: 5px 5px rgb(50,50,50, .7);
@@ -350,10 +350,6 @@ body {
             margin-top: 5%;
         }
 
-          .centered {
-              text-align: center;
-              display: inline-block;
-          }
         
             /*this is special to each description*/
             .p1desc {
@@ -376,9 +372,11 @@ body {
               grid-area: p4desc;
             }
 
+          .centered {
+              display: inline;
+              text-align: center;
+          }
 
-
- 
 
 .contact {
 	height: 35vh;
@@ -429,3 +427,262 @@ body {
 
 
 
+@media only screen and (max-width: 600px) {
+    .wrapper {
+      max-width: 100vh;  
+      overflow-x: hidden;
+    }
+
+        /*HOME*/
+
+        .home h1 {
+          opacity: .75;
+          font-size: 2.5em;
+          position: relative;
+          top: 20%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        .home h2 {
+          font-size: 1.5em;
+          position: relative;
+          top: 25%;
+          left: 55%;
+          transform: translate(-50%, -50%);
+        }
+        
+        /*V down icon*/
+        .home p {
+          opacity: .6;
+          position: relative;
+          font-size: 1.8em;
+          top: 90%;
+          left: 50%;
+          transform: translate(-50%, -50%) scale(2, 1);
+        }
+
+    /*ABOUT*/
+
+    .about {
+      max-height: 170vh;
+    }
+
+      /*  .aboutMe {
+          position: relative;
+          z-index: 2;
+          display: inline-block;
+          width: 62%;
+          max-height: 70vh;
+          overflow: inherit;
+        }*/
+
+            .aboutMe h1 {
+              font-size: 2em;
+              width: 10%;
+              transform: translate(600%, 50%);
+            }
+
+            .mAboutMeMe {
+              position: relative;
+              left: 120%;
+            }
+
+            .aboutImg {  
+              position: relative;
+              z-index: 2;
+              display: inline-block;
+              width: 70vh;
+              height: 90vh;
+              transform: translate(-7%, -125%);
+            }
+
+                .aboutImg img {
+                  position: relative;
+                  z-index: 2;
+                  width: 50%;
+                  height: 50%;
+                  border-radius: 0;
+                  border: 2px inset gray;
+                  box-shadow: none;
+                  transform: translate(45%,55%);
+                }
+
+            .aboutMe p {
+              position: relative;
+              left: 7%;
+              top: 180px;
+              width: 125%;
+              text-align: center;
+            }
+
+            .aboutMe p:nth-of-type(1) {
+              transform: translate(10%,150%);
+            }
+
+            .aboutMe p:nth-of-type(2) {
+              transform: translate(10%,110%);
+            }
+
+            .aboutMe p:nth-of-type(3) {
+              transform: translate(10%,430%);
+            }
+      
+
+    .skills {
+      height: 65vh;
+      background: url('../images/skillsbackgroundMobile.png');
+      background-size: cover;
+    }
+
+    .projects {
+      height: 370vh;
+      width: 100vw;
+      /*border: 2px solid red;*/
+    }
+
+
+    .projects h1 {
+      font-size: 3em;
+      text-align: center;
+      margin: auto;
+      position: relative;
+      top: 5%;
+      color: white;
+      text-decoration: underline;
+      text-underline-position: under;
+    }
+
+    .projectGrid {
+      width: 90%;
+      position: relative;
+      top: 7%;
+      display: grid;
+      grid-row-gap: 2%;
+      grid-template-areas: 
+                          'p1name'
+                          'p1'    
+                          'p1desc'
+                          '  .   '
+                          'p2name'
+                          'p2'    
+                          'p2desc'
+                          '  .   '
+                          'p3name'
+                          'p3'    
+                          'p3desc'
+                          '  .   '
+                          'p4name'
+                          'p4'    
+                          'p4desc';
+      grid-template-rows: .5fr 6fr 4fr .5fr .5fr 6fr 4fr .5fr .5fr 6fr 4fr .5fr .5fr 6fr 4fr;
+      grid-template-columns: 1fr;
+    }
+
+        /*this is similar to p1name to p4name*/
+        .pname {
+          width: 100%;
+          font-weight: 600;
+          text-align: center;
+          /*padding: 2px;*/
+          /*font-size: 1.7em;*/
+          text-decoration: underline;
+          /*border: 2px solid red;*/
+          /*text-underline-position: under;*/
+        }
+
+            /*what is special to p1name to p4name*/
+            .p1name {
+              grid-area: p1name;
+            }
+
+            .p2name {
+              grid-area: p2name;
+            }
+
+            .p3name {
+              grid-area: p3name;
+            }
+
+            .p4name {
+              grid-area: p4name;
+            }
+
+        /*this is similar to p1 to p4*/
+        .p {
+          height: 27vh;
+          width: 100%;
+          padding-bottom: 0;
+          cursor: pointer;
+          background-repeat: no-repeat;
+          background-size: contain;
+          /*border: 2px solid red;*/
+        }
+
+            /*what is special to p1 to p4*/
+
+            .p1 {
+              grid-area: p1;
+              background-image: url("../images/ajonesHome.png");
+            }
+
+            .p2 {
+              grid-area: p2;
+              background-image: url("../images/iaHome.png");
+            }
+
+            .p3 {
+              grid-area: p3;
+              background-image: url("../images/funcGameHome.png");
+            }
+
+            .p4 {
+              grid-area: p4;
+              background-image: url("../images/portHome.png");
+            }
+
+        /*this is similar to all descriptions*/
+        .pdesc {
+            /*border-radius: 5px;*/
+            position: relative;
+            background-color: rgb(0,0,0, .4);
+            padding: 0px 0px;
+            width: 100%;
+            /*top: 15%;*/
+            /*margin: auto;*/
+            margin: 5% 0 0 0;
+            padding: 10px;
+            
+            /*border: 2px solid red;*/
+        }
+
+          .centered {
+              /*font-size: .8em;*/
+              /*word-wrap: break-word;*/
+              text-align: center;
+              display: inline-block;
+          }
+        
+            /*this is special to each description*/
+            .p1desc {
+              position: relative;
+              grid-area: p1desc;
+            }
+
+            .p2desc {
+              position: relative;
+              grid-area: p2desc;
+            }
+
+            .p3desc {
+              position: relative;
+              grid-area: p3desc;
+            }
+
+            .p4desc {
+              position: relative;
+              grid-area: p4desc;
+            }
+
+    
+}
