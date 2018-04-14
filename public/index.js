@@ -41,21 +41,28 @@ const scrollFunc = {
 
 
 function checkMobile(){
-	const galaxyRatio = screen.width/screen.height;
+	const ratio = screen.width/screen.height;
+	var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+	var ua = navigator.userAgent.toLowerCase();
+var isAndroid = ua.indexOf("android") > -1;
 	// let screenHeight = screen.height;
 	// let adjustedHeight = screenHeight/2+200;
 	const secondAboutP = document.getElementById('secondAboutP');
 	const thirdAboutP = document.getElementById('thirdAboutP');
+	const aboutHead = document.getElementsByClassName('aboutHead');
 	const about = document.getElementsByClassName('aboutContent');
+	const aboutImg = document.getElementsByClassName('aboutImg');
 	const aboutContents = document.getElementsByClassName('aboutContent');
 	const skills = document.getElementsByClassName('skills');
 	const projects = document.getElementsByClassName('projects');
 	const contact = document.getElementsByClassName('contact');
-	if(screen.width<400 && galaxyRatio>.5){
-		aboutContents[0].style.marginTop = "-100px";
+	if(screen.width<400 && ratio>.5 && isAndroid){
+		aboutHead[0].style.marginTop = "-50px";
+		aboutImg[0].style.marginTop = "0px";
+		aboutContents[0].style.marginTop = "-70px";
 		secondAboutP.style.marginTop = "-30px";
 		thirdAboutP.style.marginTop = "-50px";
-		projects[0].style.height = "370vh";
+		projects[0].style.height = "390vh";
 	}
 }
 
