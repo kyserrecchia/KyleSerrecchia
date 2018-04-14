@@ -38,4 +38,18 @@ const scrollFunc = {
 	projects: function(){document.querySelector('.projects').scrollIntoView({behavior: 'smooth'})},
 	contact: function(){document.querySelector('.contact').scrollIntoView({behavior: 'smooth'})}
 }
+
+
+function checkMobile(){
+	const galaxyRatio = screen.width/screen.height;
+	// let screenHeight = screen.height;
+	// let adjustedHeight = screenHeight/2+200;
+	const aboutContents = document.getElementsByClassName('aboutContent');
+	const abouts = document.getElementsByClassName('about');
+	if(screen.width<400 && galaxyRatio>.5){
+		abouts[0].style.maxHeight = "100px";
+	}
+}
+
+checkMobile();
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
