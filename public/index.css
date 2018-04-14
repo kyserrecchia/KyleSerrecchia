@@ -479,7 +479,7 @@ body {
 
     .about {
       height: 100vh;
-      height: inherit;
+      /*height: inherit;*/
       grid-area: about;
       display: grid;
       grid-template-areas: 

@@ -44,10 +44,18 @@ function checkMobile(){
 	const galaxyRatio = screen.width/screen.height;
 	// let screenHeight = screen.height;
 	// let adjustedHeight = screenHeight/2+200;
+	const secondAboutP = document.getElementById('secondAboutP');
+	const thirdAboutP = document.getElementById('thirdAboutP');
+	const about = document.getElementsByClassName('aboutContent');
 	const aboutContents = document.getElementsByClassName('aboutContent');
-	const abouts = document.getElementsByClassName('about');
+	const skills = document.getElementsByClassName('skills');
+	const projects = document.getElementsByClassName('projects');
+	const contact = document.getElementsByClassName('contact');
 	if(screen.width<400 && galaxyRatio>.5){
-		abouts[0].style.maxHeight = "100px";
+		aboutContents[0].style.marginTop = "-100px";
+		secondAboutP.style.marginTop = "-30px";
+		thirdAboutP.style.marginTop = "-50px";
+		projects[0].style.height = "370vh";
 	}
 }
 
