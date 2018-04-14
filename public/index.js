@@ -62,7 +62,7 @@ var isAndroid = ua.indexOf("android") > -1;
 		aboutContents[0].style.marginTop = "-70px";
 		secondAboutP.style.marginTop = "-30px";
 		thirdAboutP.style.marginTop = "-50px";
-		projects[0].style.height = "390vh";
+		projects[0].style.height = "400vh";
 	}
 }
 
