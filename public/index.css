@@ -447,7 +447,7 @@ body {
                           'projects'
                           'contact';
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1.5fr 1fr 3.6fr .5fr;
+      grid-template-rows: 1fr 1.6fr 1fr 3.7fr .5fr;
     }
 
         /*HOME*/
