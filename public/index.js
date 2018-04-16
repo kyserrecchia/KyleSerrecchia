@@ -42,11 +42,9 @@ const scrollFunc = {
 
 function checkMobile(){
 	const ratio = screen.width/screen.height;
-	var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
-	var ua = navigator.userAgent.toLowerCase();
-var isAndroid = ua.indexOf("android") > -1;
-	// let screenHeight = screen.height;
-	// let adjustedHeight = screenHeight/2+200;
+	// const iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+	const ua = navigator.userAgent.toLowerCase();
+	const isAndroid = ua.indexOf("android") > -1;
 	const secondAboutP = document.getElementById('secondAboutP');
 	const thirdAboutP = document.getElementById('thirdAboutP');
 	const aboutHead = document.getElementsByClassName('aboutHead');
