@@ -40,29 +40,4 @@ const scrollFunc = {
 }
 
 
-function checkMobile(){
-	const ratio = screen.width/screen.height;
-	// const iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
-	const ua = navigator.userAgent.toLowerCase();
-	const isAndroid = ua.indexOf("android") > -1;
-	const secondAboutP = document.getElementById('secondAboutP');
-	const thirdAboutP = document.getElementById('thirdAboutP');
-	const aboutHead = document.getElementsByClassName('aboutHead');
-	const about = document.getElementsByClassName('aboutContent');
-	const aboutImg = document.getElementsByClassName('aboutImg');
-	const aboutContents = document.getElementsByClassName('aboutContent');
-	const skills = document.getElementsByClassName('skills');
-	const projects = document.getElementsByClassName('projects');
-	const contact = document.getElementsByClassName('contact');
-	if(screen.width<400 && ratio>.5 && isAndroid){
-		aboutHead[0].style.marginTop = "-50px";
-		aboutImg[0].style.marginTop = "0px";
-		aboutContents[0].style.marginTop = "-70px";
-		secondAboutP.style.marginTop = "-30px";
-		thirdAboutP.style.marginTop = "-50px";
-		projects[0].style.height = "400vh";
-	}
-}
-
-checkMobile();
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
